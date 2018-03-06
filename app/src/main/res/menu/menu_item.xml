@@ -1,0 +1,30 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity" >
+
+    <item android:id="@+id/menu_refresh"
+        android:title="Refresh"
+        android:icon="@drawable/refresh"
+        android:orderInCategory="101"
+        app:showAsAction="always" />
+    <!--
+        app:showAsAction="always"
+        app은 외부 라이브러리를 사용하겠다는 속성
+        showAsAction="always"는 계속 보여달라는 속성
+    -->
+    <item android:id="@+id/menu_search"
+        android:title="Search"
+        android:icon="@drawable/search"
+        android:orderInCategory="102"
+        app:showAsAction="always|withText" />
+
+
+    <item android:id="@+id/menu_settings"
+        android:title="Settings"
+        android:icon="@drawable/settings"
+        android:orderInCategory="103"
+        app:showAsAction="never" />
+
+</menu>
+
